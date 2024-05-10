@@ -11,7 +11,7 @@ jobs:
      - name: Deploy to server
        uses: appleboy/ssh-action@v1.0.3 
        with:
-        host: ${{ secrets. HOST}}
-        username: $ secrets. USERNAME}}
-        key: $secrets.SSHKEY}}
+        host: ${{ secrets.HOST}}
+        username: ${{ secrets.USERNAME}}
+        key: ${{ secrets.SSHKEY}}
         script: "cd /home/ubuntu/devops && ./deploy.sh"
